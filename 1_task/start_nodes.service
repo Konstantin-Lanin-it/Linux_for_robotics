@@ -1,0 +1,11 @@
+[Unit]
+Description=Start ROS nodes on boot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/user/scripts/start_nodes.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
