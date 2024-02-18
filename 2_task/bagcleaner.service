@@ -1,0 +1,9 @@
+[Unit]
+Description=Script to clean old bag files
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/your/script.sh
+
+[Install]
+WantedBy=multi-user.target
